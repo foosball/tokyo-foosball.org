@@ -1,5 +1,4 @@
 exports.config =
-  # See http://brunch.io/#documentation for docs.
   files:
     javascripts:
       joinTo:
@@ -16,6 +15,5 @@ exports.config =
     templates:
       joinTo: 'javascripts/app.js'
 
-  plugins:
-    sass:
-      debug: 'comments' # or set to 'debug' for the FireSass-style output
+  keyword:
+    filePattern: /\.(css|html)$/

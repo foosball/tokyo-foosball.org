@@ -18,10 +18,17 @@
     "css-brunch": ">= 1.0 < 1.8",
     "stylus-brunch": ">= 1.0 < 1.8",
     "handlebars-brunch": ">= 1.0 < 1.8",
+    "inflection": "1.2.6",
+    "jade-brunch": "~1.7.3",
     "uglify-js-brunch": ">= 1.0 < 1.8",
     "clean-css-brunch": ">= 1.0 < 1.8",
     "auto-reload-brunch": ">= 1.0 < 1.8",
-    "inflection": "*"
+    "inflection": "*",
+    "brunch": "~1.7.4",
+    "bower": ">= 1.2",
+    "mocha-phantomjs": ">= 3.1.6",
+    "gzip-brunch": ">= 1.2.0",
+    "keyword-brunch": "~1.7.1"
   },
   "devDependencies": {}
 }
