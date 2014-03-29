@@ -3,12 +3,112 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Brunch example application</title>
+  <title>tokyo-foosball.org</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/stylesheets/app.css">
   <script src="/javascripts/vendor.js"></script>
   <script src="/javascripts/app.js"></script>
+
   <script>require('initialize');</script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK3c49CDl1SJWYzyZ6d4WE19vHgjlyBhU&sensor=false&extension=.js"></script>
+  <script>
+    google.maps.event.addDomListener(window, 'load', init);
+
+    var map;
+
+    function init() {
+      var mapOptions = {
+        center: new google.maps.LatLng(35.697456,139.696426),
+        zoom: 11,
+        zoomControl: true,
+        zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.DEFAULT,
+        },
+        disableDoubleClickZoom: true,
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+        },
+        scaleControl: true,
+        scrollwheel: true,
+        streetViewControl: true,
+        draggable : true,
+        overviewMapControl: true,
+        overviewMapControlOptions: {
+          opened: false,
+        },
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: [
+        {
+          featureType: "landscape.natural",
+          elementType: "geometry.fill",
+          stylers: [
+            { "visibility": "on" },
+            { "color": "#e0efef" }
+          ]
+        },
+        {
+          featureType: "poi",
+          elementType: "geometry.fill",
+          stylers: [
+            { "visibility": "on" },
+            { "hue": "#1900ff" },
+            { "color": "#c0e8e8" }
+          ]
+        },
+        {
+          //buildings
+          featureType: "landscape.man_made",
+          elementType: "geometry.fill"
+        },
+        {
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [
+            { lightness: 100 },
+            { visibility: "simplified" }
+          ]
+        },
+        {
+          featureType: "road",
+          elementType: "labels",
+          stylers: [
+            { visibility: "off" }
+          ]
+        },
+        {
+          featureType: 'water',
+          stylers: [
+            { color: '#7dcdcd' }
+          ]
+        },
+        {
+          featureType: 'transit.line',
+          elementType: 'geometry',
+          stylers: [
+            { visibility: 'on' },
+            { lightness: 700 }
+          ]
+        }
+        ],
+      }
+
+      var mapElement = document.getElementById('map');
+      var map = new google.maps.Map(mapElement, mapOptions);
+      var locations = [
+
+      ];
+
+      for (i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+          icon: '',
+          position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+          map: map
+        });
+      }
+    }
+  </script>
 </head>
 <body>
   <div id='layout-container'></div>
