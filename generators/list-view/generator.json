@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "from": "item-view.coffee.hbs",
+      "to": "app/views/{{$2}}/{{name}}-item-view.coffee"
+    },
+    {
+      "from": "item-view-test.coffee.hbs",
+      "to": "test/views/{{$2}}/{{name}}-item-view-test.coffee"
+    },
+    {
+      "from": "list-view.coffee.hbs",
+      "to": "app/views/{{$2}}/{{name}}-list-view.coffee"
+    },
+    {
+      "from": "list-view-test.coffee.hbs",
+      "to": "test/views/{{$2}}/{{name}}-list-view-test.coffee"
+    },
+    {
+      "from": "item-template.coffee.hbs",
+      "to": "app/templates/{{$2}}/{{name}}-item.jade"
+    },
+    {
+      "from": "view-collection.coffee.hbs",
+      "to": "app/view-models/{{$2}}/{{name}}-view-collection.coffee"
+    },
+    {
+      "from": "view-collection-test.coffee.hbs",
+      "to": "test/view-models/{{$2}}/{{name}}-view-collection-test.coffee"
+    },
+    {
+      "from": "item-view-model.coffee.hbs",
+      "to": "app/view-models/{{$2}}/{{name}}-item-view-model.coffee"
+    },
+    {
+      "from": "item-view-model-test.coffee.hbs",
+      "to": "test/view-models/{{$2}}/{{name}}-item-view-model-test.coffee"
+    }
+  ]
+}
