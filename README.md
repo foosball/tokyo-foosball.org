@@ -1,7 +1,7 @@
 # tokyo-foosball.org
 
-* CoffeeScript
-* Handlebars
+* Brunch + Chaplin
+* Jade
 * Stylus
 
 ## Install
