@@ -19,7 +19,6 @@
     "stylus-brunch": ">= 1.0 < 1.8",
     "inflection": "1.2.6",
     "jade-brunch": "~1.7.3",
-    "static-jade-brunch": "~1.4.11",
     "uglify-js-brunch": ">= 1.0 < 1.8",
     "clean-css-brunch": ">= 1.0 < 1.8",
     "auto-reload-brunch": ">= 1.0 < 1.8",
