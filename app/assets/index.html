@@ -96,14 +96,15 @@
 
       var mapElement = document.getElementById('map');
       var map = new google.maps.Map(mapElement, mapOptions);
-      var locations = [
 
+      var locations = [
+        [35.706132,139.648526]
       ];
 
       for (i = 0; i < locations.length; i++) {
         marker = new google.maps.Marker({
           icon: '',
-          position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+          position: new google.maps.LatLng(locations[i][0], locations[i][1]),
           map: map
         });
       }
