@@ -5,4 +5,4 @@ Controller = require 'controllers/base/controller'
 module.exports = class {{#camelize}}{{name}}{{/camelize}} extends Controller
   index: ->
     @viewModel = new {{#camelize}}{{name}}{{/camelize}}ViewModel
-    @view = @compose '{{name}}', {{#camelize}}{{name}}{{/camelize}}View, model: @viewModel
+    @view = @reuse '{{name}}', {{#camelize}}{{name}}{{/camelize}}View, model: @viewModel
